@@ -4,6 +4,7 @@ let Rsetbtn = document.querySelector("#btn2")
 let pera = document.querySelector(".result");
 let counter = document.querySelector("#counter");
 
+
 let count = 0;
 let i = 0;
 
@@ -28,16 +29,21 @@ const reset= ()=>{
     i = 0;
      minesCount=0
     pera.innerHTML="Fetching......."
-    btn.innerText="Fetch"
+    btn.innerText="Fetch";
+    loader.style.display="none";
+  
+   
 }
 
   function click(){
    count++
    btn.innerText="NEXT"
    console.log(count);
-   if(count==5){
+   if(count==6){
    btn.disabled= true;
     count=0;
+
+    loader.style.display="block";
     setTimeout(reset, 4000);
    
    }
@@ -60,3 +66,4 @@ main.addEventListener("mousemove",(e)=>{
       console.log();
 
 })
+let loader = document.querySelector(".loader");
