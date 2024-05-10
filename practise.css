@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, rgba(0, 255, 229, 0.432), rgba(242, 152, 152, 0.734))
+  ,url("https://petlibro.com/cdn/shop/files/shutterstock_1422948287.jpg?v=1704968235");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+   background-repeat: no-repeat;
+   overflow-x: hidden;
+}
+main{
+    text-align: center;
+    padding-top: 10rem;
+    font-variant: small-caps;
+    color: blue;
+    position: relative;
+}
+h1{
+    font-weight: lighter;
+    text-shadow: 2px 3px 11px red;
+    padding: 1rem;
+}
+.result{
+    width: 80%;
+    height: auto;
+    background-color: #ffffff71;
+    margin: auto;
+    backdrop-filter: blur(2px);
+    padding: 2rem; 
+    font-size: 2.1rem;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: normal;
+    border-radius: 23px;
+    box-shadow:  2px 4px 15px 2px rgba(132, 129, 129, 0.857);  
+
+}
+.btn{
+    padding: 10px 2.2rem;
+    font-size: larger;
+    display: block;
+    margin: 1.2rem auto;
+    background-color: bisque;
+    outline: none;
+    cursor: pointer;
+   border-radius: 3px;
+   background-color: blueviolet;
+   border: none;
+   color: white;
+   font-variant: small-caps;
+}
+#btn:disabled{
+    background-color: burlywood;
+}
+#counter{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(136, 162, 21, 0.799);
+    border-radius: 50%;
+    color: #f7ff05;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(-50%, -50%);
+   font-size: 6rem;
+   line-height: 152px;
+   background-image: url('https://media.wnyc.org/i/800/0/c/85/photologue/photos/fact%20check.jpg');
+   background-size: contain;
+   font-weight: bolder;
+   background-blend-mode:difference
+}
+.cursor{
+    transition: all 0.2s linear;
+    position: absolute;
+  
+}
+.cursor img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  
+}
+@media screen and (max-width: 768px) {
+    #counter {
+        position: fixed;
+        top: 12%;
+        left: 50%;
+    }
+    .result{
+        height: auto;
+    }
+    body{
+        background-position: 70%; 
+    }
+  }
+ 
